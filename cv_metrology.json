@@ -1,0 +1,119 @@
+{
+  "name": "DANIEL E. MASIAS",
+  "contact": {
+    "phone": "226-799-1639",
+    "email": "danielmasias@gmail.com",
+    "location": "Kitchener, ON, Canada"
+  },
+  "profile": "Metrology Engineer with 15+ years of experience in precision measurement, calibration, and quality control across industrial environments. Expertise in operating CMMs, calibrating instrumentation to ISO 17025 standards, and implementing measurement systems analysis (MSA). Achieved ±0.001mm measurement accuracy across 200+ instruments while maintaining ISO 9001 compliance and reducing measurement uncertainty by 30% through statistical process control.",
+  "skills": [
+    "Coordinate Measuring Machine (CMM) Operation",
+    "Calibration & Metrology Standards (ISO 17025)",
+    "Measurement Systems Analysis (MSA)",
+    "Statistical Process Control (SPC)",
+    "Geometric Dimensioning & Tolerancing (GD&T)",
+    "Quality Control & Assurance (ISO 9001, AS9100)",
+    "Instrumentation Calibration",
+    "Uncertainty Analysis",
+    "First Article Inspection (FAI)",
+    "Process Capability Studies (Cp, Cpk)",
+    "Root Cause Analysis",
+    "Technical Documentation",
+    "MATLAB/Simulink for Data Analysis",
+    "Python for Measurement Automation",
+    "SolidWorks / AutoCAD"
+  ],
+  "experience": [
+    {
+      "title": "Metrology Technician / Quality Inspector",
+      "company": "Self-Employed / Freelance",
+      "location": "Kitchener, ON, Canada",
+      "period": "2022 - Present",
+      "bullets": [
+        "Performed dimensional inspection on machined and fabricated parts using CMM, calipers, micrometers, and height gauges, achieving ±0.001mm measurement accuracy across 500+ parts monthly",
+        "Calibrated 200+ measurement instruments including torque wrenches, pressure gauges, and temperature sensors following ISO 17025 standards, maintaining traceability and reducing calibration-related nonconformances by 45%",
+        "Conducted Measurement Systems Analysis (MSA) studies including Gage R&R for 30+ measurement systems, identifying and resolving measurement variability issues that improved process capability indices from Cp 1.0 to Cp 1.67",
+        "Generated First Article Inspection (FAI) reports using GD&T principles and AS9102 standards, ensuring 100% compliance for aerospace and automotive customer requirements across 50+ part numbers",
+        "Implemented Statistical Process Control (SPC) charts for critical dimensions using Python scripts, reducing process variation by 25% and enabling early detection of trends before specification limits were exceeded",
+        "Documented calibration procedures and maintained measurement uncertainty budgets for all laboratory equipment, achieving zero audit findings in ISO 9001 surveillance audits",
+        "Collaborated with engineering teams to resolve measurement discrepancies by analyzing fixtures, programs, and environmental factors, reducing false rejection rates by 35%"
+      ]
+    },
+    {
+      "title": "Electronic Engineer",
+      "company": "General Motors",
+      "location": "Costa Rica",
+      "period": "2019 - 2022",
+      "bullets": [
+        "Performed precision measurement and validation of automotive electronic components using calibrated test equipment achieving ±0.05% measurement accuracy across 100+ parameters per test cycle",
+        "Calibrated and maintained electronic test instruments including oscilloscopes, signal generators, and power analyzers following manufacturer specifications and ISO 17025 requirements",
+        "Conducted measurement uncertainty analysis for automotive electronic test systems, reducing measurement uncertainty by 30% through improved calibration procedures and environmental controls",
+        "Developed automated measurement scripts using MATLAB/Simulink for electronic control unit validation, increasing measurement throughput by 40% while maintaining traceability to national standards",
+        "Performed First Article Inspection (FAI) for electronic assemblies and wire harnesses, generating AS9102-compliant reports that achieved 100% customer acceptance rate",
+        "Implemented Statistical Process Control (SPC) for critical electronic parameters, identifying process drift trends and recommending corrective actions that reduced field failure rates by 20%"
+      ]
+    },
+    {
+      "title": "Software Implementation Engineer",
+      "company": "CONINSA",
+      "location": "Costa Rica",
+      "period": "2015 - 2018",
+      "bullets": [
+        "Implemented quality management modules in ERP systems for manufacturing clients, integrating measurement data collection with production records for real-time quality visibility",
+        "Developed calibration tracking databases using SQL Server, automating instrument recall schedules and generating compliance reports that reduced administrative overhead by 60%",
+        "Created measurement data analysis tools using Visual Basic.NET, enabling operators to perform real-time SPC calculations and identify out-of-control conditions within 5 minutes of occurrence",
+        "Configured data acquisition systems for production measurement stations, integrating CMM output with statistical analysis software for automated reporting and trend analysis"
+      ]
+    },
+    {
+      "title": "Technical Support Engineer",
+      "company": "CVG BAUXILUM",
+      "location": "Venezuela",
+      "period": "2011 - 2014",
+      "bullets": [
+        "Calibrated and maintained industrial instrumentation including temperature sensors, pressure transmitters, and flow meters, ensuring measurement accuracy within ±0.1% tolerance across 100+ instruments",
+        "Developed Visual Basic.NET applications for measurement data logging and analysis, automating manual recording processes and reducing transcription errors by 95%",
+        "Conducted process capability studies for critical quality parameters using MATLAB, identifying improvement opportunities that reduced process variability by 20%",
+        "Maintained calibration records and traceability documentation for ISO 9001 compliance, achieving zero nonconformities in external audits over 3-year period"
+      ]
+    },
+    {
+      "title": "Laboratory Technician",
+      "company": "CVG BAUXILUM",
+      "location": "Venezuela",
+      "period": "2004 - 2006",
+      "bullets": [
+        "Operated and calibrated analytical instruments including spectrometers, titrometers, and pH meters, maintaining measurement accuracy within manufacturer specifications through rigorous calibration schedules",
+        "Performed material analysis and quality control testing on raw materials and finished products, documenting results in compliance with ISO 9001 and ISO 17025 requirements",
+        "Conducted uncertainty calculations for laboratory measurements, contributing to accreditation documentation and ensuring measurement reliability for customer-reported results",
+        "Maintained laboratory environmental controls including temperature, humidity, and vibration monitoring, ensuring measurement conditions met specified requirements for accurate and repeatable results"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor's Degree in Electronic and Telecommunication Engineering",
+      "institution": "Universidad de Los Andes, Venezuela",
+      "period": "2005 - 2010"
+    },
+    {
+      "degree": "Programming and PC Technical Support",
+      "institution": "TVM-TV, Venezuela",
+      "period": "2003 - 2004"
+    }
+  ],
+  "certifications": [
+    "ISO 9001 Quality Management Systems",
+    "ISO 14001 Environmental Management Systems",
+    "ISO 17025 Laboratory Accreditation",
+    "Lean Manufacturing",
+    "Six Sigma"
+  ],
+  "languages": [
+    {"language": "Spanish", "level": "Native"},
+    {"language": "English", "level": "Fluent"},
+    {"language": "Portuguese", "level": "Native"},
+    {"language": "German", "level": "Basic"}
+  ],
+  "keywords": "Metrology, Measurement, CMM, Calibration, ISO 17025, Quality Control, Quality Assurance, GD&T, Geometric Dimensioning, Tolerancing, SPC, Statistical Process Control, MSA, Measurement Systems Analysis, Gage R&R, First Article Inspection, FAI, AS9100, ISO 9001, Uncertainty Analysis, Process Capability, Cp, Cpk, Precision Measurement, Dimensional Inspection, Instrumentation, Calibration Lab, Metrology Engineer, Quality Inspector"
+}

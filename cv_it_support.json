@@ -1,0 +1,108 @@
+{
+  "name": "DANIEL E. MASIAS",
+  "contact": {
+    "phone": "226-799-1639",
+    "email": "danielmasias@gmail.com",
+    "location": "Kitchener, ON, Canada"
+  },
+  "profile": "IT Support Specialist with 15+ years of experience resolving complex technical issues across enterprise environments. Proficient in Microsoft 365, Azure, Active Directory, and Windows Server administration. Delivered 98% ticket resolution rate while reducing system downtime by 40% through proactive monitoring and automation. Bilingual in Spanish and English with strong communication skills for cross-functional collaboration.",
+  "skills": [
+    "Microsoft 365 Administration",
+    "Azure Active Directory",
+    "Windows Server 2016/2019/2022",
+    "Exchange Online & SharePoint",
+    "Network Troubleshooting (TCP/IP, DNS, DHCP, VPN)",
+    "ServiceNow / Jira Ticketing Systems",
+    "Hardware & Software Deployment",
+    "Remote Support Tools (Teams, AnyDesk)",
+    "Group Policy & Security Configuration",
+    "Active Directory User Management",
+    "SQL Server Basic Queries",
+    "Technical Documentation & Training",
+    "ITIL Framework",
+    "Customer Service Excellence"
+  ],
+  "experience": [
+    {
+      "title": "IT Support Specialist",
+      "company": "Self-Employed / Freelance",
+      "location": "Kitchener, ON, Canada",
+      "period": "2022 - Present",
+      "bullets": [
+        "Resolved 200+ monthly support tickets for Microsoft 365, Azure AD, and Windows Server issues using remote diagnostic tools, achieving 98% first-contact resolution rate and reducing escalation volume by 35%",
+        "Administered Active Directory for 50+ user accounts including group policy configuration, password resets, and access permissions, decreasing security incidents by 25% through proactive audit reviews",
+        "Troubleshot and repaired hardware failures across desktops, laptops, printers, and network equipment using diagnostic software and multimeters, restoring 95% of devices within 4 hours of ticket submission",
+        "Configured and maintained Windows Server 2019 environments including DNS, DHCP, and IIS services, ensuring 99.5% uptime for critical business applications across multiple client sites",
+        "Implemented Microsoft Intune MDM policies for 30+ remote devices, streamlining device management and reducing on-site visits by 60% through automated deployment and compliance reporting",
+        "Provided Tier 2/3 escalation support for complex Exchange Online mailbox issues including migration, retention policies, and hybrid configurations, completing 15+ migrations with zero data loss",
+        "Created technical documentation and runbooks for common IT procedures, reducing average troubleshooting time by 30% and enabling junior staff to resolve 40% of tickets independently",
+        "Deployed and configured VPN solutions (Cisco AnyConnect, FortiClient) for 100+ remote workers, ensuring secure connectivity and compliance with corporate security policies"
+      ]
+    },
+    {
+      "title": "Electronic Engineer",
+      "company": "General Motors",
+      "location": "Costa Rica",
+      "period": "2019 - 2022",
+      "bullets": [
+        "Developed and executed 50+ automated test procedures for automotive electronic control units using MATLAB/Simulink, reducing validation time by 45% and improving defect detection rate by 30%",
+        "Diagnosed and repaired complex electrical/electronic faults in production test equipment using oscilloscopes and multimeters, maintaining 99.2% equipment availability across 3 production lines",
+        "Configured and troubleshot Windows-based test stations including network connectivity, driver installation, and software deployment, resolving 90% of issues without external IT support",
+        "Implemented SQL Server databases for test result storage and analysis, creating automated reports that reduced manual data entry by 80% and improved reporting accuracy by 95%",
+        "Collaborated with IT department to deploy Active Directory policies for 200+ engineering workstations, ensuring consistent security configurations and software licensing compliance",
+        "Provided technical support to 50+ engineers on hardware/software issues including MATLAB, Simulink, and proprietary test tools, maintaining project timelines and reducing delays by 25%"
+      ]
+    },
+    {
+      "title": "Software Implementation Engineer",
+      "company": "CONINSA",
+      "location": "Costa Rica",
+      "period": "2015 - 2018",
+      "bullets": [
+        "Led ERP system implementations for 10+ clients by configuring ProALPHA modules on Windows Server environments, completing 85% of projects on time and within budget",
+        "Migrated legacy SQL Server databases to new ERP environments including data validation and integrity checks, ensuring zero data loss across 500+GB of historical records",
+        "Provided post-implementation support via remote desktop tools resolving 100+ monthly tickets for ERP access, permissions, and functionality issues with 95% client satisfaction rating",
+        "Configured network infrastructure including VPN tunnels, firewall rules, and DNS settings to enable secure remote access to ERP systems for 200+ end users across multiple locations",
+        "Trained 300+ end-users on ERP software utilization through hands-on workshops and video tutorials, reducing support tickets by 40% in the first month post-training"
+      ]
+    },
+    {
+      "title": "Technical Support Engineer",
+      "company": "CVG BAUXILUM",
+      "location": "Venezuela",
+      "period": "2011 - 2014",
+      "bullets": [
+        "Provided comprehensive technical support for 100+ workstations, 10 servers, and network infrastructure including switches, routers, and firewalls, maintaining 98% system availability",
+        "Developed Visual Basic.NET applications for industrial process monitoring and reporting, automating manual data collection tasks and saving 20+ hours of weekly labor",
+        "Administered SQL Server databases for operational reporting including query optimization, backup scheduling, and user permission management for 50+ concurrent users",
+        "Configured and maintained Windows Server 2012 R2 environments including Active Directory, DNS, DHCP, and file services, ensuring seamless operations across 3 facilities",
+        "Installed and configured network equipment including Cisco switches and routers, implementing VLAN segmentation that improved network performance by 30%"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor's Degree in Electronic and Telecommunication Engineering",
+      "institution": "Universidad de Los Andes, Venezuela",
+      "period": "2005 - 2010"
+    },
+    {
+      "degree": "Programming and PC Technical Support",
+      "institution": "TVM-TV, Venezuela",
+      "period": "2003 - 2004"
+    }
+  ],
+  "certifications": [
+    "Microsoft Azure Fundamentals",
+    "Microsoft 365 Certified",
+    "ITIL Foundation",
+    "ISO 9001 Quality Management Systems"
+  ],
+  "languages": [
+    {"language": "Spanish", "level": "Native"},
+    {"language": "English", "level": "Fluent"},
+    {"language": "Portuguese", "level": "Native"},
+    {"language": "German", "level": "Basic"}
+  ],
+  "keywords": "IT Support, Technical Support, Help Desk, Service Desk, Microsoft 365, Azure, Active Directory, Windows Server, Exchange Online, SharePoint, OneDrive, TCP/IP, DNS, DHCP, VPN, Network Troubleshooting, Hardware Support, Software Deployment, Remote Support, Ticketing System, ITIL, Customer Service, Problem Solving, Technical Documentation, SQL Server, Group Policy, Intune, MDM, Active Directory"
+}

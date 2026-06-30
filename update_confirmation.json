@@ -1,0 +1,27 @@
+﻿{
+    "updates":  [
+                    {
+                        "triggeredBy":  "scheduled_task",
+                        "status":  "success",
+                        "timestamp":  "2026-06-29T13:40:12Z",
+                        "message":  "Update completed successfully",
+                        "jobsFound":  21
+                    },
+                    {
+                        "triggeredBy":  "scheduled_task",
+                        "status":  "error",
+                        "timestamp":  "2026-06-29T15:41:38Z",
+                        "message":  "Exception setting \"cvReady\": \"The property \u0027cvReady\u0027 cannot be found on this object. Verify that the property exists and can be set.\"",
+                        "jobsFound":  0
+                    },
+                    {
+                        "triggeredBy":  "scheduled_task",
+                        "status":  "success",
+                        "timestamp":  "2026-06-29T15:41:50Z",
+                        "message":  "Update completed with CV generation",
+                        "jobsFound":  21
+                    }
+                ],
+    "lastUpdate":  "2026-06-29T15:41:50Z",
+    "lastStatus":  "success"
+}

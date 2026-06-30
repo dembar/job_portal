@@ -1,0 +1,485 @@
+﻿{
+    "lastUpdated":  "2026-06-29T15:41:50Z",
+    "categories":  {
+                       "it_support":  {
+                                          "name":  "IT Support",
+                                          "icon":  "ðŸ’»",
+                                          "jobs":  [
+                                                       {
+                                                           "id":  "IT001",
+                                                           "company":  "OpsLevel",
+                                                           "position":  "Technical Support Specialist",
+                                                           "location":  "Remote - Canada",
+                                                           "type":  "remote",
+                                                           "salary":  "$65,000 - $85,000/year",
+                                                           "salaryMin":  65000,
+                                                           "website":  "https://www.opslevel.com",
+                                                           "careerPage":  "https://www.opslevel.com/careers",
+                                                           "applyUrl":  "https://boards.greenhouse.io/opslevel",
+                                                           "description":  "Provide expert technical troubleshooting for a SaaS platform. Work with customers to resolve complex technical issues.",
+                                                           "requirements":  [
+                                                                                "2+ years technical support experience",
+                                                                                "SaaS troubleshooting",
+                                                                                "SQL knowledge",
+                                                                                "Customer service skills"
+                                                                            ],
+                                                           "postedDate":  "2026-06-25",
+                                                           "verified":  true,
+                                                           "score":  92
+                                                       },
+                                                       {
+                                                           "id":  "IT002",
+                                                           "company":  "gaiia",
+                                                           "position":  "Technical Support Lead",
+                                                           "location":  "Remote - Canada",
+                                                           "type":  "remote",
+                                                           "salary":  "$85,000 - $105,000/year",
+                                                           "salaryMin":  85000,
+                                                           "website":  "https://www.gaiia.com",
+                                                           "careerPage":  "https://www.gaiia.com/careers",
+                                                           "applyUrl":  "https://ats.rippling.com/gaiias-open-positions/jobs",
+                                                           "description":  "Manage complex customer support inquiries and ensure support quality. Troubleshoot data and reporting issues.",
+                                                           "requirements":  [
+                                                                                "3+ years technical support",
+                                                                                "SQL knowledge",
+                                                                                "Tableau experience",
+                                                                                "Leadership skills"
+                                                                            ],
+                                                           "postedDate":  "2026-06-20",
+                                                           "verified":  true,
+                                                           "score":  90
+                                                       },
+                                                       {
+                                                           "id":  "IT003",
+                                                           "company":  "WaterlooIT",
+                                                           "position":  "Tier Two Technical Support",
+                                                           "location":  "Waterloo, ON",
+                                                           "type":  "kitchener",
+                                                           "salary":  "$60,000 - $95,000/year",
+                                                           "salaryMin":  60000,
+                                                           "website":  "https://www.waterlooit.ca",
+                                                           "careerPage":  "https://www.waterlooit.ca/careers",
+                                                           "applyUrl":  "https://www.waterlooit.ca/careers",
+                                                           "description":  "Provide advanced IT support to clients. Troubleshoot complex technical issues and provide solutions.",
+                                                           "requirements":  [
+                                                                                "Azure experience",
+                                                                                "Windows Server",
+                                                                                "Customer service",
+                                                                                "Problem solving"
+                                                                            ],
+                                                           "postedDate":  "2026-06-18",
+                                                           "verified":  true,
+                                                           "score":  88
+                                                       },
+                                                       {
+                                                           "id":  "IT004",
+                                                           "company":  "OpenText",
+                                                           "position":  "Lead Technical Support Specialist",
+                                                           "location":  "Waterloo, ON",
+                                                           "type":  "kitchener",
+                                                           "salary":  "$76,000 - $125,000/year",
+                                                           "salaryMin":  76000,
+                                                           "website":  "https://www.opentext.com",
+                                                           "careerPage":  "https://www.opentext.com/careers",
+                                                           "applyUrl":  "https://careers.opentext.com",
+                                                           "description":  "Identify and resolve customer issues via phone and written correspondence. Provide high-level technical support.",
+                                                           "requirements":  [
+                                                                                "Oracle experience",
+                                                                                "DevOps knowledge",
+                                                                                "Java skills",
+                                                                                "Technical documentation"
+                                                                            ],
+                                                           "postedDate":  "2026-06-15",
+                                                           "verified":  true,
+                                                           "score":  91
+                                                       },
+                                                       {
+                                                           "id":  "IT005",
+                                                           "company":  "Verily",
+                                                           "position":  "Senior Technical Support Analyst",
+                                                           "location":  "Waterloo, ON",
+                                                           "type":  "kitchener",
+                                                           "salary":  "$123,000 - $139,000/year",
+                                                           "salaryMin":  123000,
+                                                           "website":  "https://www.verily.com",
+                                                           "careerPage":  "https://www.verily.com/careers",
+                                                           "applyUrl":  "https://careers.verily.com",
+                                                           "description":  "Provide high-level technical support. Communicate technical details to developers and non-technical customers.",
+                                                           "requirements":  [
+                                                                                "Exceptional communication",
+                                                                                "Technical expertise",
+                                                                                "Problem solving",
+                                                                                "Customer focus"
+                                                                            ],
+                                                           "postedDate":  "2026-06-12",
+                                                           "verified":  true,
+                                                           "score":  95
+                                                       },
+                                                       {
+                                                           "id":  "IT006",
+                                                           "company":  "GC AI",
+                                                           "position":  "Customer Support Specialist",
+                                                           "location":  "Remote - Canada",
+                                                           "type":  "remote",
+                                                           "salary":  "$64,000 - $86,000/year",
+                                                           "salaryMin":  64000,
+                                                           "website":  "https://gc.ai",
+                                                           "careerPage":  "https://gc.ai/careers",
+                                                           "applyUrl":  "https://gc.ai/careers",
+                                                           "description":  "Provide world-class technical support for legal AI platform. Troubleshoot issues and ensure customer success.",
+                                                           "requirements":  [
+                                                                                "Customer support experience",
+                                                                                "Technical aptitude",
+                                                                                "Intercom/Zendesk",
+                                                                                "Communication skills"
+                                                                            ],
+                                                           "postedDate":  "2026-06-22",
+                                                           "verified":  true,
+                                                           "score":  89
+                                                       },
+                                                       {
+                                                           "id":  "IT007",
+                                                           "company":  "Faire",
+                                                           "position":  "IT Support Technician",
+                                                           "location":  "Kitchener-Waterloo, ON",
+                                                           "type":  "kitchener",
+                                                           "salary":  "$55,000 - $75,000/year",
+                                                           "salaryMin":  55000,
+                                                           "website":  "https://www.faire.com",
+                                                           "careerPage":  "https://www.faire.com/careers",
+                                                           "applyUrl":  "https://boards.greenhouse.io/faire",
+                                                           "description":  "Work through ticket queue, help employees with MacOS, SaaS tools, account access. Support internal events.",
+                                                           "requirements":  [
+                                                                                "MacOS support",
+                                                                                "SaaS tools",
+                                                                                "Jira experience",
+                                                                                "Communication skills"
+                                                                            ],
+                                                           "postedDate":  "2026-06-21",
+                                                           "verified":  true,
+                                                           "score":  87
+                                                       },
+                                                       {
+                                                           "id":  "IT008",
+                                                           "company":  "Contemporary Computers",
+                                                           "position":  "Managed IT Technician - L1+",
+                                                           "location":  "Kitchener-Waterloo, ON",
+                                                           "type":  "kitchener",
+                                                           "salary":  "$55,000 - $90,000/year",
+                                                           "salaryMin":  55000,
+                                                           "website":  "https://www.contemporarycomputers.ca",
+                                                           "careerPage":  "https://www.contemporarycomputers.ca/careers",
+                                                           "applyUrl":  "https://www.contemporarycomputers.ca/careers",
+                                                           "description":  "Hybrid remote/onsite IT support. Manage client infrastructure and provide technical assistance.",
+                                                           "requirements":  [
+                                                                                "IT support experience",
+                                                                                "Networking basics",
+                                                                                "Hardware troubleshooting",
+                                                                                "Customer service"
+                                                                            ],
+                                                           "postedDate":  "2026-06-19",
+                                                           "verified":  true,
+                                                           "score":  86
+                                                       }
+                                                   ]
+                                      },
+                       "maintenance":  {
+                                           "name":  "Maintenance Technician",
+                                           "icon":  "ðŸ”§",
+                                           "jobs":  [
+                                                        {
+                                                            "id":  "MT001",
+                                                            "company":  "Cargill",
+                                                            "position":  "Licensed Millwright",
+                                                            "location":  "Kitchener, ON",
+                                                            "type":  "kitchener",
+                                                            "salary":  "$87,000 - $95,000/year",
+                                                            "salaryMin":  87000,
+                                                            "website":  "https://www.cargill.com",
+                                                            "careerPage":  "https://www.cargill.com/careers",
+                                                            "applyUrl":  "https://jobs.cargill.com",
+                                                            "description":  "Ensure safe and efficient operation of equipment. Perform preventive and corrective maintenance.",
+                                                            "requirements":  [
+                                                                                 "Millwright license",
+                                                                                 "Welding certification",
+                                                                                 "Blueprint reading",
+                                                                                 "Mechanical experience"
+                                                                             ],
+                                                            "postedDate":  "2026-06-17",
+                                                            "verified":  true,
+                                                            "score":  93
+                                                        },
+                                                        {
+                                                            "id":  "MT002",
+                                                            "company":  "Linamar",
+                                                            "position":  "Automation Technician",
+                                                            "location":  "Canada (Remote possible)",
+                                                            "type":  "remote",
+                                                            "salary":  "$66,000 - $93,000/year",
+                                                            "salaryMin":  66000,
+                                                            "website":  "https://www.linamar.com",
+                                                            "careerPage":  "https://www.linamar.com/careers",
+                                                            "applyUrl":  "https://careers.linamar.com",
+                                                            "description":  "Work with program managers and project engineers. Support manufacturing automation systems.",
+                                                            "requirements":  [
+                                                                                 "PLC programming",
+                                                                                 "Automation experience",
+                                                                                 "Manufacturing environment",
+                                                                                 "Problem solving"
+                                                                             ],
+                                                            "postedDate":  "2026-06-15",
+                                                            "verified":  true,
+                                                            "score":  88
+                                                        },
+                                                        {
+                                                            "id":  "MT003",
+                                                            "company":  "Ricoh",
+                                                            "position":  "Field Service Technician",
+                                                            "location":  "Kitchener, ON",
+                                                            "type":  "kitchener",
+                                                            "salary":  "$50,000 - $60,000/year",
+                                                            "salaryMin":  50000,
+                                                            "website":  "https://www.ricoh.ca",
+                                                            "careerPage":  "https://www.ricoh.ca/careers",
+                                                            "applyUrl":  "https://careers.ricoh.ca",
+                                                            "description":  "Maintain production and commercial printers. Provide on-site technical support.",
+                                                            "requirements":  [
+                                                                                 "Printer maintenance",
+                                                                                 "Customer service",
+                                                                                 "Technical documentation",
+                                                                                 "Driver\u0027s license"
+                                                                             ],
+                                                            "postedDate":  "2026-06-20",
+                                                            "verified":  true,
+                                                            "score":  85
+                                                        },
+                                                        {
+                                                            "id":  "MT004",
+                                                            "company":  "H\u0026O Cylindrical Precision",
+                                                            "position":  "Maintenance Technician",
+                                                            "location":  "Waterloo, ON",
+                                                            "type":  "kitchener",
+                                                            "salary":  "$55,000 - $72,000/year",
+                                                            "salaryMin":  55000,
+                                                            "website":  "https://www.ho-precision.com",
+                                                            "careerPage":  "https://www.ho-precision.com/careers",
+                                                            "applyUrl":  "https://www.ho-precision.com/careers",
+                                                            "description":  "Maintain precision equipment. Perform preventive and corrective maintenance on manufacturing machinery.",
+                                                            "requirements":  [
+                                                                                 "Equipment maintenance",
+                                                                                 "Mechanical skills",
+                                                                                 "Electrical knowledge",
+                                                                                 "Troubleshooting"
+                                                                             ],
+                                                            "postedDate":  "2026-06-18",
+                                                            "verified":  true,
+                                                            "score":  87
+                                                        },
+                                                        {
+                                                            "id":  "MT005",
+                                                            "company":  "Sarens",
+                                                            "position":  "Heavy Equipment Technician",
+                                                            "location":  "Ayr, ON",
+                                                            "type":  "kitchener",
+                                                            "salary":  "$115,000 - $130,000/year",
+                                                            "salaryMin":  115000,
+                                                            "website":  "https://www.sarens.com",
+                                                            "careerPage":  "https://www.sarens.com/careers",
+                                                            "applyUrl":  "https://careers.sarens.com",
+                                                            "description":  "Maintain and repair heavy equipment. Perform diagnostics and complex repairs.",
+                                                            "requirements":  [
+                                                                                 "Heavy equipment experience",
+                                                                                 "Diagnostic skills",
+                                                                                 "Welding",
+                                                                                 "Hydraulics"
+                                                                             ],
+                                                            "postedDate":  "2026-06-22",
+                                                            "verified":  true,
+                                                            "score":  91
+                                                        },
+                                                        {
+                                                            "id":  "MT006",
+                                                            "company":  "CBRE",
+                                                            "position":  "Mobile Maintenance Technician",
+                                                            "location":  "Toronto, ON (Remote possible)",
+                                                            "type":  "remote",
+                                                            "salary":  "$65,000 - $70,000/year",
+                                                            "salaryMin":  65000,
+                                                            "website":  "https://www.cbre.com",
+                                                            "careerPage":  "https://www.cbre.com/careers",
+                                                            "applyUrl":  "https://careers.cbre.com",
+                                                            "description":  "Mobile maintenance across multiple sites. Perform building maintenance and repairs.",
+                                                            "requirements":  [
+                                                                                 "Building maintenance",
+                                                                                 "Electrical knowledge",
+                                                                                 "Plumbing basics",
+                                                                                 "MS Office"
+                                                                             ],
+                                                            "postedDate":  "2026-06-16",
+                                                            "verified":  true,
+                                                            "score":  86
+                                                        },
+                                                        {
+                                                            "id":  "MT007",
+                                                            "company":  "Wescast Industries",
+                                                            "position":  "Maintenance Work Team Leader",
+                                                            "location":  "Stratford, ON",
+                                                            "type":  "kitchener",
+                                                            "salary":  "$100,000 - $115,000/year",
+                                                            "salaryMin":  100000,
+                                                            "website":  "https://www.wescast.com",
+                                                            "careerPage":  "https://www.wescast.com/careers",
+                                                            "applyUrl":  "https://careers.wescast.com",
+                                                            "description":  "Lead maintenance team. Provide leadership and technical expertise.",
+                                                            "requirements":  [
+                                                                                 "Electrical or Millwright license",
+                                                                                 "Leadership experience",
+                                                                                 "Manufacturing environment",
+                                                                                 "Problem solving"
+                                                                             ],
+                                                            "postedDate":  "2026-06-14",
+                                                            "verified":  true,
+                                                            "score":  90
+                                                        }
+                                                    ]
+                                       },
+                       "metrology":  {
+                                         "name":  "Metrology",
+                                         "icon":  "ðŸ“",
+                                         "jobs":  [
+                                                      {
+                                                          "id":  "MX001",
+                                                          "company":  "AtkinsRÃ©alis",
+                                                          "position":  "Metrology Technician",
+                                                          "location":  "Kincardine, ON",
+                                                          "type":  "kitchener",
+                                                          "salary":  "$54,000 - $74,000/year",
+                                                          "salaryMin":  54000,
+                                                          "website":  "https://www.atkinsrealis.com",
+                                                          "careerPage":  "https://www.atkinsrealis.com/careers",
+                                                          "applyUrl":  "https://careers.atkinsrealis.com",
+                                                          "description":  "Field measurement, 3D data capture, and CAD-based analysis. Work alongside experienced professionals.",
+                                                          "requirements":  [
+                                                                               "Metrology experience",
+                                                                               "3D data capture",
+                                                                               "CAD skills",
+                                                                               "Measurement systems"
+                                                                           ],
+                                                          "postedDate":  "2026-06-19",
+                                                          "verified":  true,
+                                                          "score":  89
+                                                      },
+                                                      {
+                                                          "id":  "MX002",
+                                                          "company":  "Stratatek Test \u0026 Measurement",
+                                                          "position":  "Senior Calibration Technician",
+                                                          "location":  "Canada",
+                                                          "type":  "remote",
+                                                          "salary":  "$65,000 - $85,000/year",
+                                                          "salaryMin":  65000,
+                                                          "website":  "https://www.stratatek.com",
+                                                          "careerPage":  "https://www.stratatek.com/careers",
+                                                          "applyUrl":  "https://www.stratatek.com/careers",
+                                                          "description":  "Perform calibration services. Work with precision measurement equipment.",
+                                                          "requirements":  [
+                                                                               "Calibration experience",
+                                                                               "Electrical/Electronics background",
+                                                                               "Metrology knowledge",
+                                                                               "Driver\u0027s license"
+                                                                           ],
+                                                          "postedDate":  "2026-06-21",
+                                                          "verified":  true,
+                                                          "score":  88
+                                                      },
+                                                      {
+                                                          "id":  "MX003",
+                                                          "company":  "TI Automotive",
+                                                          "position":  "Precision Dimensional Engineer - GD\u0026T \u0026 Metrology Lead",
+                                                          "location":  "Canada",
+                                                          "type":  "remote",
+                                                          "salary":  "$85,000 - $110,000/year",
+                                                          "salaryMin":  85000,
+                                                          "website":  "https://www.tiauto.com",
+                                                          "careerPage":  "https://www.tiauto.com/careers",
+                                                          "applyUrl":  "https://careers.tiauto.com",
+                                                          "description":  "Oversee precision, accuracy, and quality control for automotive components. Lead GD\u0026T and metrology initiatives.",
+                                                          "requirements":  [
+                                                                               "Mechanical Engineering degree",
+                                                                               "GD\u0026T expertise",
+                                                                               "Dimensional analysis",
+                                                                               "Quality control"
+                                                                           ],
+                                                          "postedDate":  "2026-06-18",
+                                                          "verified":  true,
+                                                          "score":  92
+                                                      },
+                                                      {
+                                                          "id":  "MX004",
+                                                          "company":  "Carl Zeiss AG",
+                                                          "position":  "Field Service Technician - Metrology",
+                                                          "location":  "Remote - North America",
+                                                          "type":  "remote",
+                                                          "salary":  "$65,000 - $85,000/year",
+                                                          "salaryMin":  65000,
+                                                          "website":  "https://www.zeiss.com",
+                                                          "careerPage":  "https://www.zeiss.com/careers",
+                                                          "applyUrl":  "https://careers.zeiss.com",
+                                                          "description":  "Service and support metrology equipment. Provide technical assistance to customers.",
+                                                          "requirements":  [
+                                                                               "CMM experience",
+                                                                               "Metrology knowledge",
+                                                                               "Customer service",
+                                                                               "Travel willingness"
+                                                                           ],
+                                                          "postedDate":  "2026-06-23",
+                                                          "verified":  true,
+                                                          "score":  94
+                                                      },
+                                                      {
+                                                          "id":  "MX005",
+                                                          "company":  "Nordson",
+                                                          "position":  "Field Applications Engineer - Metrology",
+                                                          "location":  "Remote - North America",
+                                                          "type":  "remote",
+                                                          "salary":  "$85,000 - $110,000/year",
+                                                          "salaryMin":  85000,
+                                                          "website":  "https://www.nordson.com",
+                                                          "careerPage":  "https://www.nordson.com/careers",
+                                                          "applyUrl":  "https://careers.nordson.com",
+                                                          "description":  "Provide technical support for metrology applications. Work with customers to optimize measurement processes.",
+                                                          "requirements":  [
+                                                                               "Metrology expertise",
+                                                                               "Applications engineering",
+                                                                               "Customer facing experience",
+                                                                               "Technical communication"
+                                                                           ],
+                                                          "postedDate":  "2026-06-20",
+                                                          "verified":  true,
+                                                          "score":  91
+                                                      },
+                                                      {
+                                                          "id":  "MX006",
+                                                          "company":  "InnovMetric Software",
+                                                          "position":  "C++ Developer of 3D Metrology Solutions",
+                                                          "location":  "Quebec, Canada",
+                                                          "type":  "remote",
+                                                          "salary":  "$88,000 - $130,000/year",
+                                                          "salaryMin":  88000,
+                                                          "website":  "https://www.innovmetric.com",
+                                                          "careerPage":  "https://www.innovmetric.com/careers",
+                                                          "applyUrl":  "https://careers.innovmetric.com",
+                                                          "description":  "Develop 3D metrology software solutions. Work with cutting-edge measurement technology.",
+                                                          "requirements":  [
+                                                                               "C++ expertise",
+                                                                               "3D geometry knowledge",
+                                                                               "Software development",
+                                                                               "Metrology interest"
+                                                                           ],
+                                                          "postedDate":  "2026-06-16",
+                                                          "verified":  true,
+                                                          "score":  90
+                                                      }
+                                                  ]
+                                     }
+                   }
+}

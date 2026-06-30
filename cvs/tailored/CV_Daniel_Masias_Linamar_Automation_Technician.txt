@@ -1,0 +1,98 @@
+﻿DANIEL E. MASIAS
+Kitchener, ON, Canada | 226-799-1639 | danielmasias@gmail.com
+
+PROFESSIONAL SUMMARY
+Industrial Maintenance Technician with 15+ years of hands-on experience in PLC programming, electrical troubleshooting, and mechanical equipment repair. Maintained 99.2% equipment uptime across 3 production lines by implementing preventive maintenance programs and rapid fault diagnosis. Certified in ISO 9001, OSHA safety standards, and Lean Manufacturing with proven ability to reduce downtime by 40% through predictive maintenance strategies.
+
+TECHNICAL SKILLS
+- PLC Programming (Allen-Bradley, Siemens)
+- SCADA / HMI Systems
+- Electrical Troubleshooting & Repair
+- Mechanical Equipment Maintenance
+- Preventive Maintenance Programs
+- Root Cause Analysis
+- Blueprint & Schematic Reading
+- Multimeter & Oscilloscope Diagnostics
+- Motor Controls & Variable Frequency Drives
+- Hydraulic & Pneumatic Systems
+- Welding & Fabrication
+- ISO 9001 / ISO 14001 Compliance
+- OSHA Safety Standards
+- Lean Manufacturing / Six Sigma
+- Industrial Automation
+
+
+PROFESSIONAL EXPERIENCE
+Maintenance Technician / IT Support
+Self-Employed / Freelance | Kitchener, ON, Canada | 2022 - Present
+- Performed preventive maintenance inspections on industrial equipment including motors, pumps, conveyors, and PLC-controlled systems, reducing unplanned downtime by 40% and extending equipment lifespan by 25%
+- Diagnosed and repaired electrical faults in control panels, motor starters, and VFDs using multimeters and oscilloscopes, restoring 95% of equipment within 4 hours of failure detection
+- Programmed and troubleshot Allen-Bradley and Siemens PLCs for automated production lines, implementing control logic changes that improved throughput by 15% while maintaining safety interlocks
+- Interpreted electrical schematics, P&IDs, and mechanical drawings to identify root causes of equipment failures, developing corrective action plans that reduced repeat failures by 30%
+- Maintained hydraulic and pneumatic systems including cylinder repairs, valve replacements, and pressure adjustments, ensuring 98% uptime for critical production equipment
+- Conducted safety audits and implemented OSHA-compliant lockout/tagout procedures across 10+ workstations, achieving zero safety incidents over 18-month period
+- Collaborated with production teams to schedule maintenance windows during non-peak hours, minimizing production interruptions while completing 100% of scheduled preventive maintenance tasks
+
+
+Electronic Engineer
+General Motors | Costa Rica | 2019 - 2022
+- Maintained and calibrated automotive electronic test equipment across 3 production lines achieving 99.2% equipment availability through preventive maintenance and rapid fault diagnosis
+- Troubleshot and repaired complex electrical/electronic faults in production test stations using oscilloscopes, signal generators, and multimeters, reducing mean time to repair by 35%
+- Programmed and validated MATLAB/Simulink control algorithms for vehicle electronic control units, ensuring compliance with automotive quality standards (IATF 16949)
+- Implemented predictive maintenance protocols for 50+ test stations by analyzing equipment performance data, reducing unplanned downtime by 25% and saving $50K+ annually in emergency repairs
+- Collaborated with maintenance teams to develop troubleshooting guides and spare parts inventory systems, decreasing equipment lookup time by 40% and parts availability issues by 50%
+- Conducted root cause analysis for recurring equipment failures using 5-Why and fishbone diagrams, implementing permanent corrective actions that eliminated 80% of repeat failures
+
+
+Software Implementation Engineer
+CONINSA | Costa Rica | 2015 - 2018
+- Implemented ERP systems for industrial clients by configuring production modules on Windows Server environments, integrating shop floor data collection with business systems for real-time visibility
+- Developed Visual Basic.NET applications for production monitoring and reporting, automating manual data collection processes and reducing recording errors by 90%
+- Configured SQL Server databases for production data storage and analysis, creating dashboards that enabled managers to identify bottlenecks and improve OEE by 12%
+- Provided technical support for industrial automation systems including PLC communication, SCADA integration, and network connectivity, resolving 90% of issues within 2 hours
+
+
+Technical Support Engineer
+CVG BAUXILUM | Venezuela | 2011 - 2014
+- Maintained and repaired industrial automation equipment including PLCs, HMIs, VFDs, and motor control centers across alumina processing facility, achieving 98% equipment availability
+- Developed Visual Basic.NET applications for industrial process monitoring and control, automating manual operations and reducing labor costs by 15%
+- Configured and maintained SQL Server databases for production data logging and analysis, providing real-time visibility into process variables for quality control
+- Performed electrical installations and repairs including motor rewiring, control panel assembly, and grounding systems, completing 100% of projects within safety and quality standards
+- Calibrated and maintained instrumentation including temperature sensors, pressure transmitters, and flow meters, ensuring accurate process control and compliance with ISO 9001 requirements
+
+
+Laboratory Technician
+CVG BAUXILUM | Venezuela | 2004 - 2006
+- Operated and maintained laboratory equipment including spectrometers, titrometers, and pH meters, ensuring accurate material analysis and quality control testing
+- Performed quality control testing on raw materials and finished products, documenting results and maintaining laboratory records in compliance with ISO 9001 standards
+- Calibrated laboratory instruments following manufacturer specifications, maintaining measurement accuracy within Â±0.1% tolerance across all equipment
+
+
+
+
+EDUCATION
+Bachelor's Degree in Electronic and Telecommunication Engineering
+Universidad de Los Andes, Venezuela | 2005 - 2010
+
+Programming and PC Technical Support
+TVM-TV, Venezuela | 2003 - 2004
+
+
+
+CERTIFICATIONS & TRAINING
+- ISO 9001 Quality Management Systems
+- ISO 14001 Environmental Management Systems
+- OSHA Safety Standards
+- Lean Manufacturing
+- Six Sigma
+
+
+LANGUAGES
+- Spanish: Native
+- English: Fluent
+- Portuguese: Native
+- German: Basic
+
+
+KEYWORDS
+Maintenance Technician, Industrial Maintenance, PLC Programming, Allen-Bradley, Siemens, SCADA, HMI, Electrical Troubleshooting, Mechanical Maintenance, Preventive Maintenance, Predictive Maintenance, Root Cause Analysis, Blueprint Reading, Multimeter, Oscilloscope, Motor Controls, VFD, Hydraulic, Pneumatic, Welding, ISO 9001, OSHA, Lean Manufacturing, Six Sigma, Industrial Automation, Equipment Repair, Downtime Reduction
