@@ -1,9 +1,9 @@
-const JOBS_DATA = {
+const FALLBACK_JOBS_DATA = {
   "lastUpdated": "2026-06-29T13:40:12Z",
   "categories": {
     "it_support": {
       "name": "IT Support",
-      "icon": "💻",
+      "icon": "\uD83D\uDCBB",
       "jobs": [
         {"id":"IT001","company":"OpsLevel","position":"Technical Support Specialist","location":"Remote - Canada","type":"remote","salary":"$65,000 - $85,000/year","salaryMin":65000,"careerPage":"https://www.opslevel.com/careers","applyUrl":"https://builtin.com/job/technical-support-specialist/8840012","website":"https://www.opslevel.com","description":"Provide expert technical troubleshooting for a SaaS platform.","requirements":["2+ years technical support experience","SaaS troubleshooting","SQL knowledge","Customer service skills"],"postedDate":"2026-06-25","verified":true,"score":92},
         {"id":"IT002","company":"gaiia","position":"Technical Support Lead","location":"Remote - Canada","type":"remote","salary":"$85,000 - $105,000/year","salaryMin":85000,"careerPage":"https://www.gaiia.com/careers","applyUrl":"https://ats.rippling.com/gaiias-open-positions/jobs/76cb35b2-c694-44d0-8d12-deb1f16cd0f4","website":"https://www.gaiia.com","description":"Manage complex customer support inquiries and ensure support quality.","requirements":["3+ years technical support","SQL knowledge","Tableau experience","Leadership skills"],"postedDate":"2026-06-20","verified":true,"score":90},
@@ -17,7 +17,7 @@ const JOBS_DATA = {
     },
     "maintenance": {
       "name": "Maintenance Technician",
-      "icon": "🔧",
+      "icon": "\uD83D\uDD27",
       "jobs": [
         {"id":"MT001","company":"Cargill","position":"Licensed Millwright","location":"Kitchener, ON","type":"kitchener","salary":"$87,000 - $95,000/year","salaryMin":87000,"careerPage":"https://www.cargill.com/careers","applyUrl":"https://www.careerbeacon.com/en/job-12/3199694/cargill/licensed-millwright/kitchener-on","website":"https://www.cargill.com","description":"Ensure safe and efficient operation of equipment.","requirements":["Millwright license","Welding certification","Blueprint reading","Mechanical experience"],"postedDate":"2026-06-17","verified":true,"score":93},
         {"id":"MT002","company":"Linamar","position":"Automation Technician","location":"Canada (Remote possible)","type":"remote","salary":"$66,000 - $93,000/year","salaryMin":66000,"careerPage":"https://www.linamar.com/careers","applyUrl":"https://www.linamar.com/careers","website":"https://www.linamar.com","description":"Work with program managers and project engineers.","requirements":["PLC programming","Automation experience","Manufacturing environment","Problem solving"],"postedDate":"2026-06-15","verified":true,"score":88},
@@ -30,7 +30,7 @@ const JOBS_DATA = {
     },
     "metrology": {
       "name": "Metrology",
-      "icon": "📐",
+      "icon": "\uD83D\uDCD0",
       "jobs": [
         {"id":"MX001","company":"AtkinsRealis","position":"Metrology Technician","location":"Kincardine, ON","type":"kitchener","salary":"$54,000 - $74,000/year","salaryMin":54000,"careerPage":"https://www.atkinsrealis.com/careers","applyUrl":"https://careers.atkinsrealis.com","website":"https://www.atkinsrealis.com","description":"Field measurement, 3D data capture, and CAD-based analysis.","requirements":["Metrology experience","3D data capture","CAD skills","Measurement systems"],"postedDate":"2026-06-19","verified":true,"score":89},
         {"id":"MX002","company":"Stratatek Test & Measurement","position":"Senior Calibration Technician","location":"Canada","type":"remote","salary":"$65,000 - $85,000/year","salaryMin":65000,"careerPage":"https://www.stratatek.com/careers","applyUrl":"https://www.stratatek.com/careers","website":"https://www.stratatek.com","description":"Perform calibration services.","requirements":["Calibration experience","Electrical/Electronics background","Metrology knowledge","Drivers license"],"postedDate":"2026-06-21","verified":true,"score":88},
@@ -45,7 +45,7 @@ const JOBS_DATA = {
 
 class JobPortal {
     constructor() {
-        this.jobsData = JOBS_DATA;
+        this.jobsData = null;
         this.applicationLog = this.loadApplicationLog();
         this.linkCache = {};
         this.currentFilters = {
@@ -59,16 +59,49 @@ class JobPortal {
         this.init();
     }
 
-    init() {
+    async init() {
+        await this.loadJobsData();
+        await this.loadApplicationLogFromFile();
         this.setupEventListeners();
         this.renderJobs();
         this.updateStats();
         this.updateLastUpdated();
     }
 
+    async loadJobsData() {
+        try {
+            const response = await fetch('./jobs.json?t=' + Date.now());
+            if (!response.ok) throw new Error('HTTP ' + response.status);
+            this.jobsData = await response.json();
+        } catch (e) {
+            console.warn('Failed to load jobs.json, using fallback data:', e);
+            this.jobsData = FALLBACK_JOBS_DATA;
+        }
+    }
+
     loadApplicationLog() {
         const saved = localStorage.getItem('applicationLog');
         return saved ? JSON.parse(saved) : {};
+    }
+
+    async loadApplicationLogFromFile() {
+        try {
+            const response = await fetch('./application_log.json?t=' + Date.now());
+            if (!response.ok) return;
+            const data = await response.json();
+            const fileLog = data.applications || {};
+            const localLog = this.loadApplicationLog();
+            const merged = { ...fileLog };
+            for (const [jobId, entry] of Object.entries(localLog)) {
+                if (!merged[jobId] || (entry.updatedAt && (!merged[jobId].updatedAt || entry.updatedAt > merged[jobId].updatedAt))) {
+                    merged[jobId] = entry;
+                }
+            }
+            this.applicationLog = merged;
+            this.saveApplicationLog();
+        } catch (e) {
+            console.warn('Could not load application_log.json:', e);
+        }
     }
 
     saveApplicationLog() {
@@ -163,7 +196,7 @@ class JobPortal {
             if (this.currentFilters.category !== 'all' && job.category !== this.currentFilters.category) return false;
             if (this.currentFilters.location !== 'all' && job.type !== this.currentFilters.location) return false;
             const status = this.applicationLog[job.id] ? this.applicationLog[job.id].status : 'not_applied';
-            if (status === 'discarded' && !this.currentFilters.showDiscarded) return false;
+            if (!this.currentFilters.showDiscarded && (status === 'discarded' || status === 'rejected')) return false;
             if (this.currentFilters.status !== 'all' && status !== this.currentFilters.status) return false;
             return true;
         });
@@ -822,9 +855,16 @@ class JobPortal {
 
     updateStats() {
         const allJobs = this.getAllJobs();
-        document.getElementById('itSupportCount').textContent = allJobs.filter(j => j.category === 'it_support').length;
-        document.getElementById('maintenanceCount').textContent = allJobs.filter(j => j.category === 'maintenance').length;
-        document.getElementById('metrologyCount').textContent = allJobs.filter(j => j.category === 'metrology').length;
+        const showDiscarded = this.currentFilters.showDiscarded;
+        const countByCategory = (cat) => allJobs.filter(j => {
+            if (j.category !== cat) return false;
+            const status = this.applicationLog[j.id] ? this.applicationLog[j.id].status : 'not_applied';
+            if (!showDiscarded && (status === 'discarded' || status === 'rejected')) return false;
+            return true;
+        }).length;
+        document.getElementById('itSupportCount').textContent = countByCategory('it_support');
+        document.getElementById('maintenanceCount').textContent = countByCategory('maintenance');
+        document.getElementById('metrologyCount').textContent = countByCategory('metrology');
         const appliedCount = Object.values(this.applicationLog).filter(log => log.status === 'applied' || log.status === 'interview').length;
         document.getElementById('appliedCount').textContent = appliedCount;
         document.getElementById('logBadge').textContent = appliedCount;

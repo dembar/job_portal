@@ -1,0 +1,57 @@
+{
+    "sources": {
+        "google_cse": {
+            "enabled": false,
+            "api_key": "",
+            "cx": "",
+            "daily_limit": 90,
+            "description": "Google Custom Search API. Get key at https://console.cloud.google.com/apis/credentials. Create CX at https://cse.google.com/cse/all"
+        },
+        "rss_feeds": {
+            "enabled": true,
+            "daily_limit": 50,
+            "description": "RSS feeds from job aggregators. No API key needed."
+        },
+        "indeed": {
+            "enabled": true,
+            "daily_limit": 20,
+            "description": "Indeed.ca scraping. May be blocked without proxy."
+        },
+        "linkedin": {
+            "enabled": true,
+            "daily_limit": 15,
+            "description": "LinkedIn public job search. Heavy anti-bot measures."
+        },
+        "glassdoor": {
+            "enabled": true,
+            "daily_limit": 15,
+            "description": "Glassdoor scraping. Aggressive bot detection."
+        }
+    },
+    "search_queries": {
+        "it_support": [
+            "IT Support Kitchener Waterloo",
+            "Technical Support Specialist Kitchener Waterloo remote",
+            "Help Desk Technician Kitchener Ontario",
+            "IT Support Specialist remote Canada"
+        ],
+        "maintenance": [
+            "Maintenance Technician Kitchener Waterloo",
+            "Millwright Kitchener Ontario",
+            "Automation Technician Kitchener Waterloo",
+            "Industrial Maintenance Kitchener Waterloo"
+        ],
+        "metrology": [
+            "Metrology Technician Kitchener Waterloo",
+            "Calibration Technician Kitchener Ontario",
+            "Metrology remote Canada",
+            "Quality Inspection Metrology Kitchener"
+        ]
+    },
+    "settings": {
+        "request_delay_seconds": 2,
+        "max_results_per_source": 20,
+        "location": "Kitchener, ON, Canada",
+        "location_radius_km": 50
+    }
+}

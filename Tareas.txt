@@ -1,0 +1,57 @@
+OpenCode Agent Prompt
+Copy this and paste it into OpenCode on your Raspberry Pi:
+You are my job portal agent. My project is at /var/www/html.
+
+PROJECT CONTEXT:
+- Static site: HTML/CSS/JS frontend
+- Data source: jobs.json (hardcoded jobs in app.js)
+- Categories: IT Support, Maintenance, Metrology
+- User: Daniel Masias, Kitchener ON, looking for jobs in these 3 areas
+
+YOUR TASKS:
+
+1. DAILY AUTO-UPDATE (every 24 hours):
+   - Create a bash script at /var/www/html/scripts/daily_update.sh
+   - The script should:
+     a. Scrape job listings from Indeed.ca, LinkedIn, and Glassdoor for:
+        - "IT Support" jobs in Kitchener/Waterloo/Remote Canada
+        - "Maintenance Technician" jobs in Kitchener/Waterloo/Remote Canada
+        - "Metrology" jobs in Kitchener/Waterloo/Remote Canada
+     b. Parse results and add new jobs to jobs.json
+     c. Avoid duplicates (check by job ID or company+position combo)
+     d. Log all changes to /var/www/html/logs/update.log
+   - Set up a cron job to run this script daily at 8:00 AM
+
+2. POSITION COUNTER FEATURE:
+   - Modify index.html to show total available positions per category
+   - Display count in the stats section (e.g., "IT Support: 12 positions")
+   - Update the count dynamically from jobs.json
+
+3. SMART FILTERING:
+   - Read application_log.json to track application status
+   - Skip jobs with status "discarded" or "rejected" in updates
+   - Don't add jobs the user already applied to
+   - Keep jobs marked as "applied" or "interview"
+
+4. UPDATE app.js:
+   - Make it read from jobs.json instead of hardcoded data
+   - Add position count display logic
+   - Add logic to filter out discarded/rejected jobs from view
+
+CONSTRAINTS:
+- Use only bash, python, or node.js (available on Pi)
+- Keep the site static (no backend server needed)
+- Maintain existing UI/UX
+- All scraping must be respectful (rate limiting, robots.txt)
+
+START by:
+1. Reading all project files to understand current structure
+2. Creating a plan before making any changes
+3. Implementing one feature at a time
+4. Testing each feature before moving to the next
+To use this tomorrow:
+1. SSH into your Pi: ssh <user>@<tailscale_ip>
+2. Navigate to project: cd /var/www/html
+3. Run: opencode
+4. Paste the prompt above
+5. Let the agent work

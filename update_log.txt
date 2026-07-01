@@ -76,3 +76,62 @@
 [2026-06-29 15:41:50]   - CV_Daniel_Masias_Verily_Senior_Technical_Support_Analyst.txt
 [2026-06-29 15:41:50]   - CV_Daniel_Masias_WaterlooIT_Tier_Two_Technical_Support.txt
 [2026-06-29 15:41:50]   - CV_Daniel_Masias_Wescast_Industries_Maintenance_Work_Team_Leader.txt
+[2026-06-30 15:12:11] Starting job update with CV generation...
+[2026-06-30 15:12:11] Boot update triggered - checking queue...
+[2026-06-30 15:12:11] PC was off at 8:00 AM - processing missed update
+[2026-06-30 15:12:11] Generating base CVs for each profile...
+[2026-06-30 15:12:11] Generated plain text CV: D:\Personal\Jobs_Applies\job_portal\cvs\CV_Daniel_Masias_it_support.txt
+[2026-06-30 15:12:11] Generated plain text CV: D:\Personal\Jobs_Applies\job_portal\cvs\CV_Daniel_Masias_maintenance.txt
+[2026-06-30 15:12:11] Generated plain text CV: D:\Personal\Jobs_Applies\job_portal\cvs\CV_Daniel_Masias_metrology.txt
+[2026-06-30 15:12:11] Generated HTML CV: D:\Personal\Jobs_Applies\job_portal\cvs\CV_Daniel_Masias_it_support.html
+[2026-06-30 15:12:11] Generated HTML CV: D:\Personal\Jobs_Applies\job_portal\cvs\CV_Daniel_Masias_maintenance.html
+[2026-06-30 15:12:11] Generated HTML CV: D:\Personal\Jobs_Applies\job_portal\cvs\CV_Daniel_Masias_metrology.html
+[2026-06-30 15:12:11] Generating tailored CVs for each job application...
+[2026-06-30 15:12:11] Generated tailored CV for OpsLevel - Technical Support Specialist : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_OpsLevel_Technical_Support_Specialist.txt
+[2026-06-30 15:12:11] Generated tailored CV for gaiia - Technical Support Lead : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_gaiia_Technical_Support_Lead.txt
+[2026-06-30 15:12:11] Generated tailored CV for WaterlooIT - Tier Two Technical Support : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_WaterlooIT_Tier_Two_Technical_Support.txt
+[2026-06-30 15:12:11] Generated tailored CV for OpenText - Lead Technical Support Specialist : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_OpenText_Lead_Technical_Support_Specialist.txt
+[2026-06-30 15:12:12] Generated tailored CV for Verily - Senior Technical Support Analyst : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_Verily_Senior_Technical_Support_Analyst.txt
+[2026-06-30 15:12:12] Generated tailored CV for GC AI - Customer Support Specialist : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_GC_AI_Customer_Support_Specialist.txt
+[2026-06-30 15:12:12] Generated tailored CV for Faire - IT Support Technician : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_Faire_IT_Support_Technician.txt
+[2026-06-30 15:12:12] Generated tailored CV for Contemporary Computers - Managed IT Technician - L1+ : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_Contemporary_Computers_Managed_IT_Technician___L1_.txt
+[2026-06-30 15:12:12] Generated tailored CV for Cargill - Licensed Millwright : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_Cargill_Licensed_Millwright.txt
+[2026-06-30 15:12:12] Generated tailored CV for Linamar - Automation Technician : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_Linamar_Automation_Technician.txt
+[2026-06-30 15:12:12] Generated tailored CV for Ricoh - Field Service Technician : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_Ricoh_Field_Service_Technician.txt
+[2026-06-30 15:12:12] Generated tailored CV for H&O Cylindrical Precision - Maintenance Technician : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_H_O_Cylindrical_Precision_Maintenance_Technician.txt
+[2026-06-30 15:12:12] Generated tailored CV for Sarens - Heavy Equipment Technician : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_Sarens_Heavy_Equipment_Technician.txt
+[2026-06-30 15:12:12] Generated tailored CV for CBRE - Mobile Maintenance Technician : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_CBRE_Mobile_Maintenance_Technician.txt
+[2026-06-30 15:12:12] Generated tailored CV for Wescast Industries - Maintenance Work Team Leader : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_Wescast_Industries_Maintenance_Work_Team_Leader.txt
+[2026-06-30 15:12:12] Generated tailored CV for AtkinsRéalis - Metrology Technician : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_AtkinsR__alis_Metrology_Technician.txt
+[2026-06-30 15:12:12] Generated tailored CV for Stratatek Test & Measurement - Senior Calibration Technician : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_Stratatek_Test___Measurement_Senior_Calibration_Technician.txt
+[2026-06-30 15:12:12] Generated tailored CV for TI Automotive - Precision Dimensional Engineer - GD&T & Metrology Lead : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_TI_Automotive_Precision_Dimensional_Engineer___GD_T___Metrology_Lead.txt
+[2026-06-30 15:12:12] Generated tailored CV for Carl Zeiss AG - Field Service Technician - Metrology : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_Carl_Zeiss_AG_Field_Service_Technician___Metrology.txt
+[2026-06-30 15:12:12] Generated tailored CV for Nordson - Field Applications Engineer - Metrology : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_Nordson_Field_Applications_Engineer___Metrology.txt
+[2026-06-30 15:12:12] Generated tailored CV for InnovMetric Software - C++ Developer of 3D Metrology Solutions : D:\Personal\Jobs_Applies\job_portal\cvs\tailored\CV_Daniel_Masias_InnovMetric_Software_C___Developer_of_3D_Metrology_Solutions.txt
+[2026-06-30 15:12:12] Generated 21 tailored CVs
+[2026-06-30 15:12:12] Daily update completed successfully
+[2026-06-30 15:12:12] Total jobs: IT Support=8, Maintenance=7, Metrology=6
+[2026-06-30 15:12:12] CVs generated: Base CVs (3) + Tailored CVs (21) = 24 total
+[2026-06-30 15:12:12] Backup created: D:\Personal\Jobs_Applies\job_portal\backups\jobs_20260630.json
+[2026-06-30 15:12:12] Generated CVs:
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_AtkinsR__alis_Metrology_Technician.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_Cargill_Licensed_Millwright.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_Carl_Zeiss_AG_Field_Service_Technician___Metrology.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_CBRE_Mobile_Maintenance_Technician.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_Contemporary_Computers_Managed_IT_Technician___L1_.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_Faire_IT_Support_Technician.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_gaiia_Technical_Support_Lead.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_GC_AI_Customer_Support_Specialist.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_H_O_Cylindrical_Precision_Maintenance_Technician.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_InnovMetric_Software_C___Developer_of_3D_Metrology_Solutions.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_Linamar_Automation_Technician.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_Nordson_Field_Applications_Engineer___Metrology.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_OpenText_Lead_Technical_Support_Specialist.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_OpsLevel_Technical_Support_Specialist.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_Ricoh_Field_Service_Technician.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_Sarens_Heavy_Equipment_Technician.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_Stratatek_Test___Measurement_Senior_Calibration_Technician.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_TI_Automotive_Precision_Dimensional_Engineer___GD_T___Metrology_Lead.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_Verily_Senior_Technical_Support_Analyst.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_WaterlooIT_Tier_Two_Technical_Support.txt
+[2026-06-30 15:12:12]   - CV_Daniel_Masias_Wescast_Industries_Maintenance_Work_Team_Leader.txt
