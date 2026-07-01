@@ -9,6 +9,9 @@ PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 DAILY_UPDATE="$SCRIPT_DIR/daily_update.sh"
 CONFIG_FILE="$SCRIPT_DIR/config.json"
 LOG_DIR="$PROJECT_DIR/logs"
+VENV_DIR="$SCRIPT_DIR/venv"
+VENV_PYTHON="$VENV_DIR/bin/python3"
+VENV_PIP="$VENV_DIR/bin/pip"
 
 echo "=========================================="
 echo "  Job Portal Daily Update - Setup"
@@ -23,34 +26,41 @@ chmod +x "$SCRIPT_DIR/daily_update.py"
 echo "Checking Python installation..."
 if ! command -v python3 &> /dev/null; then
     echo "ERROR: python3 not found. Install with:"
-    echo "  sudo apt install python3 python3-pip"
+    echo "  sudo apt install python3 python3-venv"
     exit 1
 fi
 echo "  Python3: $(python3 --version)"
 
+# Create venv
+echo ""
+echo "Setting up virtual environment..."
+if [ ! -f "$VENV_PYTHON" ]; then
+    python3 -m venv "$VENV_DIR"
+    echo "  Created venv at $VENV_DIR"
+else
+    echo "  Venv already exists"
+fi
+
 # Install dependencies
 echo ""
-echo "Installing Python dependencies..."
-pip3 install --quiet requests beautifulsoup4 feedparser 2>/dev/null || {
-    echo "  Trying with --user flag..."
-    pip3 install --quiet --user requests beautifulsoup4 feedparser
-}
+echo "Installing Python dependencies into venv..."
+"$VENV_PIP" install --quiet --upgrade pip 2>/dev/null
+"$VENV_PIP" install --quiet requests beautifulsoup4 feedparser
 
 # Verify dependencies
 echo "Verifying dependencies..."
-python3 -c "import requests; from bs4 import BeautifulSoup; import feedparser" 2>/dev/null && {
+"$VENV_PYTHON" -c "import requests; from bs4 import BeautifulSoup; import feedparser" 2>/dev/null && {
     echo "  All dependencies OK"
 } || {
-    echo "  WARNING: Some dependencies may be missing"
+    echo "  ERROR: Dependencies failed to install"
+    exit 1
 }
 
 # Check config
 echo ""
 if [ -f "$CONFIG_FILE" ]; then
     echo "Config file found: $CONFIG_FILE"
-    
-    # Check if Google CSE is configured
-    if python3 -c "
+    "$VENV_PYTHON" -c "
 import json
 with open('$CONFIG_FILE') as f:
     c = json.load(f)
@@ -62,9 +72,7 @@ with open('$CONFIG_FILE') as f:
         print('  To enable: Edit config.json and add your API key and CX')
         print('  Get API key: https://console.cloud.google.com/apis/credentials')
         print('  Create CX:   https://cse.google.com/cse/all')
-" 2>/dev/null; then
-        true
-    fi
+" 2>/dev/null
 else
     echo "WARNING: Config file not found at $CONFIG_FILE"
 fi
@@ -75,7 +83,7 @@ mkdir -p "$LOG_DIR"
 # Test run (dry run)
 echo ""
 echo "Running dry-run test..."
-if python3 "$SCRIPT_DIR/daily_update.py" --dry-run --source rss_feeds 2>/dev/null; then
+if "$VENV_PYTHON" "$SCRIPT_DIR/daily_update.py" --dry-run --source rss_feeds 2>/dev/null; then
     echo "  Dry-run test: PASSED"
 else
     echo "  Dry-run test: FAILED (check logs)"
@@ -99,6 +107,7 @@ echo "=========================================="
 echo ""
 echo "Schedule: Every day at 8:00 AM"
 echo "Script:   $DAILY_UPDATE"
+echo "Venv:     $VENV_PYTHON"
 echo "Log:      $LOG_DIR/update.log"
 echo "Config:   $CONFIG_FILE"
 echo ""
