@@ -21,6 +21,8 @@ echo ""
 # Make scripts executable
 chmod +x "$DAILY_UPDATE"
 chmod +x "$SCRIPT_DIR/daily_update.py"
+chmod +x "$SCRIPT_DIR/server.py"
+chmod +x "$SCRIPT_DIR/install_service.sh"
 
 # Check Python
 echo "Checking Python installation..."
@@ -91,7 +93,7 @@ fi
 
 # Install cron job
 echo ""
-CRON_LINE="0 8 * * * $DAILY_UPDATE"
+CRON_LINE="30 7 * * * $DAILY_UPDATE"
 if crontab -l 2>/dev/null | grep -qF "$DAILY_UPDATE"; then
     echo "Cron job already installed:"
     crontab -l | grep "$DAILY_UPDATE"
@@ -105,7 +107,7 @@ echo "=========================================="
 echo "  Setup Complete!"
 echo "=========================================="
 echo ""
-echo "Schedule: Every day at 8:00 AM"
+echo "Schedule: Every day at 7:30 AM (results ready before your 8:00 AM review)"
 echo "Script:   $DAILY_UPDATE"
 echo "Venv:     $VENV_PYTHON"
 echo "Log:      $LOG_DIR/update.log"
@@ -119,4 +121,7 @@ echo "  Google only:    bash $DAILY_UPDATE --source google_cse"
 echo "  Verbose:        bash $DAILY_UPDATE --verbose"
 echo "  View log:       tail -f $LOG_DIR/update.log"
 echo "  Check cron:     crontab -l"
+echo ""
+echo "NEXT STEP: install the always-on dashboard server (needs sudo):"
+echo "  sudo bash $SCRIPT_DIR/install_service.sh"
 echo ""

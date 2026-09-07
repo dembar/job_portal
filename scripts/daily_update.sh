@@ -3,7 +3,8 @@
 # Creates a venv if needed, installs deps, runs the scraper
 #
 # Deploy to: /var/www/html/scripts/daily_update.sh
-# Cron: 0 8 * * * /var/www/html/scripts/daily_update.sh
+# Cron: 30 7 * * * /var/www/html/scripts/daily_update.sh
+# (runs 30 min before the 8:00 AM review window, set up by setup_cron.sh)
 
 set -euo pipefail
 

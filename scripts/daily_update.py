@@ -43,6 +43,8 @@ except ImportError:
     print("WARNING: feedparser not installed. RSS sources disabled.")
     print("  pip3 install feedparser")
 
+import cv_generator
+
 # ============================================================================
 # Configuration
 # ============================================================================
@@ -729,7 +731,10 @@ class GlassdoorSource(JobSource):
 
 def load_json(filepath: Path) -> dict:
     try:
-        with open(filepath, "r", encoding="utf-8") as f:
+        # utf-8-sig strips a BOM if present (jobs.json/update_confirmation.json
+        # get one from PowerShell's `Set-Content -Encoding UTF8`) and is a
+        # harmless no-op otherwise.
+        with open(filepath, "r", encoding="utf-8-sig") as f:
             return json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         return {}
@@ -912,8 +917,13 @@ def run_update(dry_run: bool = False, specific_source: str = None, verbose: bool
         save_json(JOBS_FILE, jobs_data)
         save_source_health({s.name: s.health for s in sources})
         log.info(f"\nSaved updated jobs.json and source health")
+
+        log.info("\nGenerating CVs (base + tailored, skipping discarded jobs)...")
+        cv_index = cv_generator.generate_all(jobs_data, app_log, log=log)
+        log.info(f"CVs generated: base (3 profiles x2 formats) + tailored ({cv_index['totalCvs']})")
     else:
         log.info(f"\n[DRY RUN] Would save jobs.json")
+        log.info("[DRY RUN] Would regenerate CVs")
 
     # Summary
     log.info("\n" + "=" * 60)

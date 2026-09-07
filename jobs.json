@@ -1,9 +1,9 @@
 ﻿{
-    "lastUpdated":  "2026-06-30T15:12:11Z",
+    "lastUpdated":  "2026-09-07T10:18:57Z",
     "categories":  {
                        "it_support":  {
                                           "name":  "IT Support",
-                                          "icon":  "ðŸ’»",
+                                          "icon":  "💻",
                                           "jobs":  [
                                                        {
                                                            "id":  "IT001",
@@ -185,7 +185,7 @@
                                       },
                        "maintenance":  {
                                            "name":  "Maintenance Technician",
-                                           "icon":  "ðŸ”§",
+                                           "icon":  "🔧",
                                            "jobs":  [
                                                         {
                                                             "id":  "MT001",
@@ -345,7 +345,7 @@
                                        },
                        "metrology":  {
                                          "name":  "Metrology",
-                                         "icon":  "ðŸ“",
+                                         "icon":  "📐",
                                          "jobs":  [
                                                       {
                                                           "id":  "MX001",

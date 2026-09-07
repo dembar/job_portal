@@ -1,0 +1,14 @@
+[Unit]
+Description=Job Portal dashboard (static site + status API)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/var/www/html/scripts
+ExecStart=/usr/bin/python3 /var/www/html/scripts/server.py --host 0.0.0.0 --port 8080
+Restart=on-failure
+RestartSec=5
+User=pi
+
+[Install]
+WantedBy=multi-user.target

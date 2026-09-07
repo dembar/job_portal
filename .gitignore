@@ -1,0 +1,14 @@
+# Daily jobs.json snapshots - useful locally, not worth tracking in git
+backups/
+
+# Python venv created by setup_cron.sh on the Pi
+scripts/venv/
+scripts/__pycache__/
+
+# Rotating logs
+logs/
+update_log.txt
+update_log.txt.*
+
+# Local editor/test scaffolding
+.claude/

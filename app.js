@@ -104,8 +104,25 @@ class JobPortal {
         }
     }
 
-    saveApplicationLog() {
+    saveApplicationLog(jobId) {
         localStorage.setItem('applicationLog', JSON.stringify(this.applicationLog));
+        if (jobId) {
+            this.syncStatusToServer(jobId);
+        }
+    }
+
+    async syncStatusToServer(jobId) {
+        const entry = this.applicationLog[jobId];
+        if (!entry) return;
+        try {
+            await fetch('/api/status', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ jobId, status: entry.status, notes: entry.notes })
+            });
+        } catch (e) {
+            console.warn('Could not sync status to server (offline or static hosting):', e);
+        }
     }
 
     setupEventListeners() {
@@ -757,7 +774,7 @@ class JobPortal {
         if (!this.applicationLog[jobId]) this.applicationLog[jobId] = {};
         this.applicationLog[jobId].status = status;
         this.applicationLog[jobId].updatedAt = new Date().toISOString();
-        this.saveApplicationLog();
+        this.saveApplicationLog(jobId);
         this.renderJobs();
         this.updateStats();
         this.renderLog();
@@ -767,7 +784,7 @@ class JobPortal {
         if (!this.applicationLog[jobId]) this.applicationLog[jobId] = {};
         this.applicationLog[jobId].notes = notes;
         this.applicationLog[jobId].updatedAt = new Date().toISOString();
-        this.saveApplicationLog();
+        this.saveApplicationLog(jobId);
         this.renderLog();
     }
 
@@ -780,7 +797,7 @@ class JobPortal {
             this.applicationLog[jobId].status = 'discarded';
         }
         this.applicationLog[jobId].updatedAt = new Date().toISOString();
-        this.saveApplicationLog();
+        this.saveApplicationLog(jobId);
         this.renderJobs();
         this.updateStats();
         this.renderLog();
