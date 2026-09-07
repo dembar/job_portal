@@ -141,6 +141,8 @@ body {
 .stat-info {
     display: flex;
     flex-direction: column;
+    min-width: 0; /* flex items default to min-width:auto, which was blocking
+                     the label from wrapping and clipping it on narrow screens */
 }
 
 .stat-number {
@@ -970,38 +972,187 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-    .header-content {
-        flex-direction: column;
-        gap: 1rem;
+
+/* Touch devices can't hover, so the discard shortcut needs to just be
+   visible rather than waiting for a :hover that will never come. */
+@media (hover: none) {
+    .btn-discard {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.65);
     }
-    
-    .stats-section {
+}
+
+/* Tablet: 481px-1024px. Keep two columns everywhere instead of collapsing
+   straight to a single phone column - there's room to use. */
+@media (max-width: 1024px) {
+    .jobs-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .filters-section {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .filter-group {
-        min-width: 100%;
+        min-width: 0;
     }
-    
+
+    .modal-content {
+        max-width: 90vw;
+    }
+}
+
+/* Phone: 480px and below. */
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    .header-info {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+
+    .stats-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .stat-card {
+        padding: 1rem;
+        gap: 0.75rem;
+    }
+
+    .stat-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 1.1rem;
+        flex-shrink: 0;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+    }
+
+    .filters-section {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
     .jobs-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
-    
+
+    .job-card-header {
+        padding: 1.25rem;
+    }
+
+    .job-card-body {
+        padding: 0 1.25rem 1.25rem;
+    }
+
+    .job-card-footer {
+        padding: 0.85rem 1.25rem;
+    }
+
+    /* Category badge is absolutely positioned over the title on desktop;
+       on phone it's cramped enough to just drop it back into flow. That
+       frees up the top-right corner, so move the discard button there
+       instead of top-left where it now collides with the badge. */
+    .job-card-category {
+        position: static;
+        display: inline-block;
+        margin-bottom: 0.75rem;
+    }
+
+    .btn-discard {
+        top: 1rem;
+        left: auto;
+        right: 1rem;
+    }
+
+    .job-card-title {
+        font-size: 1.1rem;
+        padding-right: 0;
+    }
+
+    .modal-overlay {
+        padding: 0;
+        align-items: flex-end;
+    }
+
     .modal-content {
-        margin: 1rem;
+        max-width: 100%;
+        width: 100%;
+        max-height: 92vh;
+        border-radius: 1rem 1rem 0 0;
+        margin: 0;
     }
-    
+
+    .modal-header,
+    .modal-body {
+        padding: 1.25rem;
+    }
+
     .modal-footer {
-        flex-direction: column;
+        padding: 1.25rem;
     }
-    
+
+    .modal-title h2 {
+        font-size: 1.25rem;
+    }
+
+    .status-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .status-btn {
+        text-align: center;
+    }
+
+    /* Four buttons in one flex row is too tight on a phone - 2x2 grid instead. */
+    .modal-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .modal-buttons .btn-apply,
+    .modal-buttons .btn-career,
+    .modal-buttons .btn-discard-modal,
+    .btn-download-cv {
+        padding: 0.85rem 0.5rem;
+        font-size: 0.85rem;
+    }
+
     .log-sidebar {
         width: 100%;
         right: -100%;
+    }
+
+    .btn-toggle-log {
+        width: 52px;
+        height: 52px;
+        bottom: 1.25rem;
+        right: 1.25rem;
+        font-size: 1.25rem;
     }
 }
