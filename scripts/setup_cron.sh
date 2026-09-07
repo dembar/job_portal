@@ -86,7 +86,9 @@ mkdir -p "$LOG_DIR"
 # which sources are actually enabled/working changes over time)
 echo ""
 echo "Running dry-run test..."
+set +e
 DRYRUN_OUTPUT=$("$VENV_PYTHON" "$SCRIPT_DIR/daily_update.py" --dry-run 2>&1)
+set -e
 if echo "$DRYRUN_OUTPUT" | grep -q "No sources enabled"; then
     echo "  Dry-run test: NO SOURCES ENABLED"
     echo "  Every scraping source (RSS/Indeed/LinkedIn/Glassdoor) is off in config.json"
