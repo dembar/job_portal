@@ -489,6 +489,9 @@ class RSSFeedSource(JobSource):
 class IndeedSource(JobSource):
     """Direct Indeed.ca scraping (fallback source)."""
 
+    def __init__(self, config: dict, settings: dict):
+        super().__init__("indeed", config, settings)
+
     def fetch_jobs(self, query: str, category: str) -> List[Job]:
         jobs = []
         if not self.is_enabled():
@@ -579,6 +582,9 @@ class IndeedSource(JobSource):
 class LinkedInSource(JobSource):
     """LinkedIn public job search scraping (fallback source)."""
 
+    def __init__(self, config: dict, settings: dict):
+        super().__init__("linkedin", config, settings)
+
     def fetch_jobs(self, query: str, category: str) -> List[Job]:
         jobs = []
         if not self.is_enabled():
@@ -654,6 +660,9 @@ class LinkedInSource(JobSource):
 
 class GlassdoorSource(JobSource):
     """Glassdoor scraping (fallback source)."""
+
+    def __init__(self, config: dict, settings: dict):
+        super().__init__("glassdoor", config, settings)
 
     def fetch_jobs(self, query: str, category: str) -> List[Job]:
         jobs = []
