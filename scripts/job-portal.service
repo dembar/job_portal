@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=simple
 WorkingDirectory=/var/www/html/scripts
-ExecStart=/usr/bin/python3 /var/www/html/scripts/server.py --host 0.0.0.0 --port 8080
+ExecStart=/usr/bin/python3 /var/www/html/scripts/server.py --host 127.0.0.1 --port 8080
 Restart=on-failure
 RestartSec=5
 User=pi

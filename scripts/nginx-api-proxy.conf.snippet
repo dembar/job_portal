@@ -1,0 +1,17 @@
+# Add this location block inside the existing `server { ... }` block in
+# /etc/nginx/sites-available/default (or wherever the job_portal site is
+# configured), alongside the existing `location / { ... }` block.
+#
+# server.py (run via the job-portal systemd service) binds to
+# 127.0.0.1:8080 only - it is not meant to be reachable directly. nginx
+# stays the single public entry point: it serves static files itself and
+# only proxies /api/ (status/notes persistence) to the Python service.
+#
+# Applied manually with `sudo` + `nginx -t` + `systemctl reload nginx`;
+# this file is just the documented source of truth for that edit.
+
+	location /api/ {
+		proxy_pass http://127.0.0.1:8080;
+		proxy_set_header Host $host;
+		proxy_set_header X-Real-IP $remote_addr;
+	}
