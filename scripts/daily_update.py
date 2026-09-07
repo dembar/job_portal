@@ -855,7 +855,7 @@ def run_update(dry_run: bool = False, specific_source: str = None, verbose: bool
 
     if not sources:
         log.error("No sources enabled! Edit config.json to enable at least one source.")
-        return 0
+        return -1  # signals failure to main()'s exit code, unlike a real 0-jobs-found run
 
     # Load existing data
     jobs_data = load_json(JOBS_FILE)

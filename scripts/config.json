@@ -5,27 +5,27 @@
             "api_key": "",
             "cx": "",
             "daily_limit": 90,
-            "description": "Google Custom Search API. Get key at https://console.cloud.google.com/apis/credentials. Create CX at https://cse.google.com/cse/all"
+            "description": "RECOMMENDED - the only source with a real chance of working: official API, not scraping. All 4 scraping sources below are confirmed/likely blocked as of 2026-09-07. To enable: get an API key at https://console.cloud.google.com/apis/credentials (enable 'Custom Search API' on the project), create a search engine at https://programmablesearchengine.google.com/controlpanel/all set to search the whole web, copy its Search engine ID into cx below, then set enabled to true. Free tier is 100 queries/day; daily_limit here is already set under that."
         },
         "rss_feeds": {
-            "enabled": true,
+            "enabled": false,
             "daily_limit": 50,
-            "description": "RSS feeds from job aggregators. No API key needed."
+            "description": "DISABLED 2026-09-07: Indeed discontinued their RSS feeds - every query returns 403/404/429. Confirmed by direct test, not worth retrying daily."
         },
         "indeed": {
-            "enabled": true,
+            "enabled": false,
             "daily_limit": 20,
-            "description": "Indeed.ca scraping. May be blocked without proxy."
+            "description": "DISABLED 2026-09-07: direct scraping also confirmed 403 Forbidden on every query from this Pi's IP. Re-enable only if you add a proxy and are prepared to keep fixing selectors when Indeed's HTML changes."
         },
         "linkedin": {
-            "enabled": true,
+            "enabled": false,
             "daily_limit": 15,
-            "description": "LinkedIn public job search. Heavy anti-bot measures."
+            "description": "DISABLED: heavy anti-bot measures make this unreliable enough that it's not worth the daily run time. Untested here but left off by default alongside indeed/glassdoor."
         },
         "glassdoor": {
-            "enabled": true,
+            "enabled": false,
             "daily_limit": 15,
-            "description": "Glassdoor scraping. Aggressive bot detection."
+            "description": "DISABLED: aggressive bot detection makes this unreliable enough that it's not worth the daily run time. Untested here but left off by default alongside indeed/linkedin."
         }
     },
     "search_queries": {
