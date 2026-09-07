@@ -82,13 +82,21 @@ fi
 # Ensure log directory
 mkdir -p "$LOG_DIR"
 
-# Test run (dry run)
+# Test run (dry run, all configured sources - no hardcoded --source, since
+# which sources are actually enabled/working changes over time)
 echo ""
 echo "Running dry-run test..."
-if "$VENV_PYTHON" "$SCRIPT_DIR/daily_update.py" --dry-run --source rss_feeds 2>/dev/null; then
-    echo "  Dry-run test: PASSED"
+DRYRUN_OUTPUT=$("$VENV_PYTHON" "$SCRIPT_DIR/daily_update.py" --dry-run 2>&1)
+if echo "$DRYRUN_OUTPUT" | grep -q "No sources enabled"; then
+    echo "  Dry-run test: NO SOURCES ENABLED"
+    echo "  Every scraping source (RSS/Indeed/LinkedIn/Glassdoor) is off in config.json"
+    echo "  because they're blocked in practice. Set up Google Custom Search (see"
+    echo "  the google_cse entry in config.json for exact steps) or the daily run"
+    echo "  will find 0 new jobs every time."
+elif echo "$DRYRUN_OUTPUT" | grep -qE "ERROR|Traceback"; then
+    echo "  Dry-run test: FAILED (check $LOG_DIR/update.log)"
 else
-    echo "  Dry-run test: FAILED (check logs)"
+    echo "  Dry-run test: PASSED"
 fi
 
 # Install cron job
